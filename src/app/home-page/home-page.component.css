@@ -1,0 +1,132 @@
+ 
+nav{
+    width: 100%;
+    background-color:transparent;
+    height: max-content;
+    
+}
+#about{
+    float:right;
+    padding-left: 10px;
+    color: white;
+    font-size: large;
+}
+#contact{
+  color: white;
+  font-size:large
+
+}
+a{
+    padding-left: 30px;
+    float:right
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    float: right;
+    color: white;
+    font-size: large;
+    
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    padding-left: 50px;
+   
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    width:140px;
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+  
+  .navbar{
+    min-height: 20px;
+    height: 30px; 
+  } 
+  #contact{
+    padding-right: 30px;
+    
+    text-decoration-color: chartreuse;
+  }
+  
+
+
+  .welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .welcome-message {
+    font-size: 60px;
+    opacity: 0;
+    color: beige;
+    animation: fadeIn 1s ease-in-out forwards ;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+  } 
+   
+  .slideshow {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: fade 15s infinite;
+    background-image: url('https://images.hdqwalls.com/download/lake-forest-mountains-illustration-4k-fv-1920x1080.jpg');
+    color: #FFFFFF;
+  }
+  
+  
+  /* @keyframes fade {
+    0%, 33.33% {
+      
+      background-image: url('https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif');
+    }
+    33.33%, 66.67% {
+      background-image: url('https://images.unsplash.com/photo-1520052205864-92d242b3a76b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+      
+    }
+    66.67%, 100% {
+      background-image: url('https://images.hdqwalls.com/download/cold-winter-minimal-illustration-10k-2p-1920x1080.jpg');
+    } */
+    /* 75%, 100% {
+      background-image: url('../../assets/water.png');
+    } */
+    
+  /* } */
+
+
+  
+  
+   

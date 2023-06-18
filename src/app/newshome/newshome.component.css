@@ -1,0 +1,95 @@
+h3{
+  padding-left: 450px;
+  padding-top: 50px;
+  font-size: 25px;
+  color: white;
+}
+.cont{
+  background-image: url('https://images.hdqwalls.com/download/lake-forest-mountains-illustration-4k-fv-1920x1080.jpg');
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the background color */
+  body {
+    background-color: #f1f1f1;
+    margin: 0;
+  }
+  
+  /* Style the card container */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: auto;
+  }
+  
+  /* Style the card */
+  .card {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px; /* Add margin-bottom for gap between rows */
+  }
+  
+  /* Card hover effect */
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the card content */
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the card header */
+  .card-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the card body */
+  .card-body {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Style the "Read More" link */
+  .card-body a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .card-body a:hover {
+    color: #0056b3;
+  }
+  
+  /* Add some border-radius to the card container */
+  .card-container {
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
