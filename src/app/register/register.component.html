@@ -125,17 +125,33 @@
 
 <body>
 
-    <div class="wrapper" >
+    <div class="wrapper">
 
         <div class="container main">
 
             <div class="row">
 
-                
+                <div class="col-md-6 side-image">
+
+                    <div class="text">
+
+                    </div>
+
+                </div>
 
                 <div class="col-md-6 right">
+                    
 
-                     <div class="input-box">
+                    <div class="input-box">
+                        <style>
+                            
+                            input.input, input.submit {
+                                color: white;
+                            }
+                            
+
+                        </style>
+                        
 
                         <header>Sign Up</header>
 
@@ -143,14 +159,14 @@
 
                             <input type="text" class="input" id="username" required autocomplete="off">
 
-                            <label for="email">User Name</label>
+                            <label for="email" style="color: azure;">User Name</label>
 
                         </div>
                         <div class="input-field">
 
                             <input type="text" class="input" id="email" required autocomplete="off">
 
-                            <label for="email">Email</label>
+                            <label for="email" style="color: azure;">Email</label>
 
                         </div>
 
@@ -158,7 +174,7 @@
 
                             <input type="password" class="input" id="password" required>
 
-                            <label for="password">Password</label>
+                            <label for="password" style="color: azure;">Password</label>
 
                         </div>
 
@@ -166,13 +182,13 @@
 
                             <input type="password" class="input" id="cpassword" required>
 
-                            <label for="cpassword">Confirm Password</label>
+                            <label for="cpassword" style="color: azure;">Confirm Password</label>
 
                         </div>
 
                         <div class="input-field">
 
-                            <input type="submit" class="submit" value="SignUp">
+                            <input type="submit" class="submit" value="Sign Up">
 
                            
 
@@ -187,7 +203,6 @@
                             <span>Already have an account? <a routerLink="/login">Login here</a></span>
 
                         </div>
-
                      </div>
 
                 </div>

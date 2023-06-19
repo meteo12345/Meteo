@@ -1,8 +1,4 @@
-
-
-
-  /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap'); */
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
 
 *{
 
@@ -145,6 +141,10 @@ i{
 
     padding: 0 10px 0 10px;
 
+}
+#right{
+    background-color: #fdfdfd12;
+    background: none;
 }
 
 .input{
@@ -354,3 +354,11 @@ element.style {
     box-sizing: border-box;
     margin-bottom: 50px;
 }
+.content{
+    margin-bottom: 55px;
+}
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+

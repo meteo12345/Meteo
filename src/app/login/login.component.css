@@ -27,23 +27,50 @@
     min-height: 100vh;
 
 }
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 252, 252, 0.361);
+    outline: none;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+
+
 
 .row{
 
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
     width: 775px;
 
-    height: 500px;
+    height: 450px;
 
     border-radius: 10px;
 
-    background: none;
+    background: transparent;
 
     box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
     backdrop-filter: blur(20px);
-    color: #fff;
+    color: #000000;
     border: 1px solid white;
     margin-bottom: 50px;
+    animation-name: zoomIn;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
 
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .side-image{
@@ -62,7 +89,11 @@
     border-radius: 10px 0 0 10px;
     /* background-position-y:0px; */
     background-color: #fff;
+    opacity: 85%;
 
+}
+a{
+    color: #ffffff;
 }
 
 img{
@@ -91,7 +122,7 @@ img{
 
 .text p{
 
-    color: #fff;
+    color: #ffffff;
 
     font-size: 18px;
 
@@ -123,7 +154,7 @@ i{
     width: 330px;
 
     box-sizing: border-box;
-    color: #fff;
+    color: #ffffff;
 
 }
 
@@ -203,7 +234,7 @@ i{
 
 .input-field .input:focus, .input-field .input:valid{
 
-    border-bottom: 1px solid #743ae1;
+    border-bottom: 1px solid #000000;
 
 }
 
@@ -257,7 +288,7 @@ span a:hover{
 
     text-decoration: underline;
 
-    color: #0101ff;
+    color: #000000;
 
 }
 

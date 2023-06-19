@@ -30,9 +30,9 @@
 
 .row{
 
-    width: 700px;
+    width: 775px;
 
-    height: 500px;
+    height: 450px;
 
     border-radius: 10px;
 
@@ -42,27 +42,29 @@
     backdrop-filter: blur(20px);
     color: #fff;
     border: 1px solid white;
+    margin-bottom: 50px;
 
 }
 
-/* .side-image{
+.side-image{
 
     background-image: url("https://img.freepik.com/free-vector/bad-weather-composition-with-falling-rain-drops-characters-distracted-people-holding-umbrellas-vector-illustration_1284-66534.jpg?w=2000");
-    object-fit: contain;
+
     background-position: center;
 
-    
-    background-size: 400px 300px; 
+    /* background-size: cover; */
+    background-size: 400px 350px; 
 
     background-repeat: no-repeat;
 
     position: relative;
 
     border-radius: 10px 0 0 10px;
-    
+    /* background-position-y:0px; */
     background-color: #fff;
+    opacity: 85%;
 
-} */
+}
 
 img{
 
@@ -202,7 +204,7 @@ i{
 
 .input-field .input:focus, .input-field .input:valid{
 
-    border-bottom: 1px solid #743ae1;
+    border-bottom: 1px solid #000000;
 
 }
 
@@ -256,7 +258,7 @@ span a:hover{
 
     text-decoration: underline;
 
-    color: #0101ff;
+    color: #000000;
 
 }
 
@@ -336,5 +338,7 @@ header{
     
     padding: 0 20px 0 20px;
     background-image: url('https://images.hdqwalls.com/download/lake-forest-mountains-illustration-4k-fv-1920x1080.jpg');
-    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
