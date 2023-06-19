@@ -8,6 +8,9 @@ import { LoginComponent } from './login/login.component';
 
 import { RegisterComponent } from './register/register.component';
 import { NewshomeComponent } from './newshome/newshome.component';
+import { TodaysWeatherComponent } from './todays-weather/todays-weather.component';
+import { TravelBuddyComponent } from './travel-buddy/travel-buddy.component';
+import { ForecastFutureComponent } from './forecast-future/forecast-future.component';
 
 
 
@@ -22,10 +25,10 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'news',component:NewshomeComponent},
+  {path:'todayweather',component:TodaysWeatherComponent},
+  {path:'travelbuddy',component:TravelBuddyComponent},
+  {path:'forecastfuture',component:ForecastFutureComponent}
 
- 
-  
- 
 
 ];
 

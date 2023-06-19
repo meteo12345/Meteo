@@ -20,6 +20,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { NewshomeComponent } from './newshome/newshome.component';
+import { TodaysWeatherComponent } from './todays-weather/todays-weather.component';
+import { TravelBuddyComponent } from './travel-buddy/travel-buddy.component';
+import { ForecastFutureComponent } from './forecast-future/forecast-future.component';
 
 
 
@@ -34,6 +37,9 @@ import { NewshomeComponent } from './newshome/newshome.component';
     LoginComponent,
     RegisterComponent,
     NewshomeComponent,
+    TodaysWeatherComponent,
+    TravelBuddyComponent,
+    ForecastFutureComponent,
    
    
   ],
