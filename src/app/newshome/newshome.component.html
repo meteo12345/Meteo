@@ -1,16 +1,15 @@
 <div class="cont">
-    <h3>Here are Today's Highlights</h3>
-    <br><br>
-  <div class="card-container">
-      <div *ngFor="let newsItem of newsData" class="card">
-        <div class="card-content">
-          <div class="card-header">{{ newsItem.title }}</div>
-          <div class="card-body">
-            <p>{{ newsItem.description }}</p>
-            <p>{{ newsItem.story_brief }}</p>
-          </div>
+  <h3>Here are Today's Highlights</h3>
+  <br><br>
+<div class="card-container">
+    <div *ngFor="let newsItem of newsData" class="card">
+      <div class="card-content">
+        <div class="card-header">{{ newsItem.title }}</div>
+        <div class="card-body">
+          <p>{{ newsItem.description }}</p>
+          <p>{{ newsItem.story_brief }}</p>
         </div>
       </div>
     </div>
+  </div>
 </div>
-

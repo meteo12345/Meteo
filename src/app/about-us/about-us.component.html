@@ -1,51 +1,253 @@
-<div class="wrapper">
-      
-    <div class="container main">
-      
+<!DOCTYPE html>
+<html>
 
-        <div class="row">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-            <div class="col-md-6 side-image">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
 
-                <div class="text">
+        .wrapper {
+            padding: 0 20px 0 20px;
+            background-image: url('https://images.hdqwalls.com/download/lake-forest-mountains-illustration-4k-fv-1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
 
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .row {
+            width: 100%;
+            max-width: 810px;
+            height: 495px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+            margin-bottom: 60px;
+        }
+
+        .side-image {
+            background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/258343/258343_00_2x.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px 0 0 10px;
+            height: 100%;
+            flex: 1;
+        }
+
+        .img-logo {
+            width: 35px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text p {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 100%;
+            flex: 1;
+            padding: 0 20px;
+            background-color: #fdfdfd12;
+            background: none;
+        }
+
+        .input-box {
+            width: 100%;
+            max-width: 330px;
+            box-sizing: border-box;
+            margin-bottom: 60px;
+        }
+
+        .input-box header {
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 0 10px 0 10px;
+        }
+
+        .input {
+            height: 45px;
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            outline: none;
+            margin-bottom: 20px;
+            color: #40414a;
+        }
+
+        .input-box .input-field label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            pointer-events: none;
+            transition: .5s;
+        }
+
+        .input-field .input:focus~label {
+            top: -10px;
+            font-size: 13px;
+        }
+
+        .input-field .input:valid~label {
+            top: -10px;
+            font-size: 13px;
+            color: #5d5076;
+        }
+
+        .input-field .input:focus,
+        .input-field .input:valid {
+            border-bottom: 1px solid #743ae1;
+        }
+
+        .submit {
+            border: none;
+            outline: none;
+            height: 45px;
+            background: #ececec;
+            border-radius: 5px;
+            transition: .4s;
+        }
+
+        .submit:hover {
+            background: rgba(37, 95, 156, 0.9);
+            color: #fff;
+        }
+
+        .signin {
+            text-align: center;
+            font-size: small;
+            margin-top: 25px;
+        }
+
+        span a {
+            text-decoration: none;
+            font-weight: 700;
+            color: #000;
+        }
+
+        span a:hover {
+            text-decoration: underline;
+            color: #460c9e;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .side-image {
+                border-radius: 10px 10px 0 0;
+                height: 250px;
+            }
+
+            .img-logo {
+                top: 20px;
+                left: 47%;
+            }
+
+            .text {
+                position: relative;
+                top: 0%;
+                left: 0%;
+                transform: translate(0%, 0%);
+                text-align: center;
+            }
+
+            .text p,
+            i {
+                font-size: 17px;
+            }
+
+            .right {
+                padding: 20px;
+            }
+
+            .input-box {
+                max-width: none;
+            }
+        }
+
+        .submit {
+            border: none;
+            outline: none;
+            height: 45px;
+            background: #000000;
+            border-radius: 10px;
+            transition: .4s;
+            color: white;
+            width: 100px;
+            text-align: center;
+            margin-left: 100px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        header {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="row">
+                <div class="col-md-6 side-image">
+                    <div class="text">
+                        
+                    </div>
                 </div>
-
-            </div>
-
-            <div class="col-md-6 right" id="right" >
-
-                 <div class="input-box" >
-                  <a routerLink="/home"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-lg"  style="margin-left: 340px; margin-bottom:50px">
-                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                  </svg></a>
-
-                    <header>About us</header>
-                    <div class="content">
-                    <p>Through Meteo, we provide accurate, reliable weather forecasts empowering informed decisions. Real-time updates, advanced algorithms, and intuitive features. Embrace confidence in planning your day with our user-friendly app. Join our weather community today for precise forecasting and stay one step ahead of the elements</p>
-
-                    <!-- <div class="input-field">
-
-                        <input type="submit" class="submit" value="know more">
-
-                       
-
-                       
-
-                    </div> -->
+                <div class="col-md-6 right" id="right">
+                    <div class="input-box">
+                        <a routerLink="/home"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-x-lg" style="margin-left: 340px; margin-bottom:50px">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                            </svg></a>
+                        <header>About us</header>
+                        <div class="content">
+                            <p>Through Meteo, we provide accurate, reliable weather forecasts empowering informed decisions. Real-time updates, advanced algorithms, and intuitive features. Embrace confidence in planning your day with our user-friendly app. Join our weather community today for precise forecasting and stay one step ahead of the elements</p>
+                        </div>
+                    </div>
                 </div>
-                   
-
-                    
-
-                 </div>
-
             </div>
-
         </div>
-
     </div>
+</body>
 
-</div>
-
-
+</html>

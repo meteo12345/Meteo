@@ -1,0 +1,40 @@
+.bg {
+    background-image: url('https://images.hdqwalls.com/download/lake-forest-mountains-illustration-4k-fv-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .services {
+    width: 800px;
+    text-align: center;
+    padding: 25px;
+    margin: 0 20px;
+    background-color: rgba(226, 148, 148, 0.158);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 60px;
+  }
+  
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 20px;
+    border: 1px solid rgba(207, 181, 181, 0.05);
+    background-color: rgba(185, 185, 185, 0.678);
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(207, 181, 181, 0.174);
+    color: rgb(0, 0, 0);
+  }
+  

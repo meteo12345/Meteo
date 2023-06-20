@@ -11,6 +11,7 @@ import { NewshomeComponent } from './newshome/newshome.component';
 import { TodaysWeatherComponent } from './todays-weather/todays-weather.component';
 import { TravelBuddyComponent } from './travel-buddy/travel-buddy.component';
 import { ForecastFutureComponent } from './forecast-future/forecast-future.component';
+import { ServiceComponent } from './service/service.component';
 
 
 
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path:'news',component:NewshomeComponent},
   {path:'todayweather',component:TodaysWeatherComponent},
   {path:'travelbuddy',component:TravelBuddyComponent},
-  {path:'forecastfuture',component:ForecastFutureComponent}
+  {path:'forecastfuture',component:ForecastFutureComponent},
+  {path:'service',component:ServiceComponent}
 
 
 ];

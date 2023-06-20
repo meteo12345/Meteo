@@ -23,6 +23,7 @@ import { NewshomeComponent } from './newshome/newshome.component';
 import { TodaysWeatherComponent } from './todays-weather/todays-weather.component';
 import { TravelBuddyComponent } from './travel-buddy/travel-buddy.component';
 import { ForecastFutureComponent } from './forecast-future/forecast-future.component';
+import { ServiceComponent } from './service/service.component';
 
 
 
@@ -40,6 +41,7 @@ import { ForecastFutureComponent } from './forecast-future/forecast-future.compo
     TodaysWeatherComponent,
     TravelBuddyComponent,
     ForecastFutureComponent,
+    ServiceComponent,
    
    
   ],
