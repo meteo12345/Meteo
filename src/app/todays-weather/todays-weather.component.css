@@ -38,8 +38,9 @@
         /* var(--blue-2); */
         border-radius: 20px;
         box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
-        margin-top: -35px;
+        
         backdrop-filter: blur(20px);
+        margin-top: -20px;
     }
     .upper-data{
         position:relative;
@@ -87,7 +88,7 @@
     .location{
         color:#FFF;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
 
     .temperature{
@@ -95,6 +96,7 @@
         font-size:4em;
         text-align:center;
         font-weight:900;
+        margin-top: 50px;
     }
 
     .more-info-label{
@@ -150,6 +152,7 @@
         margin-bottom:  1 em;
         text-align: center;
         font-size: 1.5em;
+       
 
     }
 
@@ -160,8 +163,9 @@
         border-radius: 20px;
         padding:1 em;
         color:#EDEDED;
-        font-size: 0.8em;
+        font-size: 1.1em;
         text-align: center;
+        margin-top: 20px;
     }
     body {
         margin: 0;

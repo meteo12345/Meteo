@@ -24,6 +24,8 @@ import { TodaysWeatherComponent } from './todays-weather/todays-weather.componen
 import { TravelBuddyComponent } from './travel-buddy/travel-buddy.component';
 import { ForecastFutureComponent } from './forecast-future/forecast-future.component';
 import { ServiceComponent } from './service/service.component';
+import { NavComponent } from './nav/nav.component';
+import { Nav1Component } from './nav1/nav1.component';
 
 
 
@@ -42,6 +44,8 @@ import { ServiceComponent } from './service/service.component';
     TravelBuddyComponent,
     ForecastFutureComponent,
     ServiceComponent,
+    NavComponent,
+    Nav1Component,
    
    
   ],
