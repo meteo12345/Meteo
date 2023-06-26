@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { NewsData } from '../model/News';
+// import { NewsData } from '../model/News';
 import { environment } from '../environments/environment';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { WeatherData } from '../model/Weather.model';
 import { Travel } from '../model/Astronomy.model';
-import { Future } from '../model/forecast.model';
+import { Root } from '../model/forecast.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,13 +14,13 @@ export class WeatherService {
 
   constructor(private http: HttpClient) { }
 
-  getNews():Observable<NewsData>{
-    return this.http.get<NewsData>(environment.newsApiUrl,{
-      headers:new HttpHeaders()
-      .set(environment.XRapidAPIHostHeaderName3,environment.XRapidAPIHostHeaderValue3)
-      .set(environment.XRapidAPIKeyHeaderName3,environment.XRapidAPIKeyHeaderValue3)
-    })
-  }
+  // getNews():Observable<NewsData>{
+  //   return this.http.get<NewsData>(environment.newsApiUrl,{
+  //     headers:new HttpHeaders()
+  //     .set(environment.XRapidAPIHostHeaderName3,environment.XRapidAPIHostHeaderValue3)
+  //     .set(environment.XRapidAPIKeyHeaderName3,environment.XRapidAPIKeyHeaderValue3)
+  //   })
+  // }
 
   getWeatherData(cityName: string): Observable<WeatherData> {
     const headers = new HttpHeaders()
@@ -41,7 +41,7 @@ export class WeatherService {
   }
 
 
-  getForecastData(cityName: string): Observable<Future> {
+  getForecastData(cityName: string): Observable<Root> {
       const headers = new HttpHeaders()
         .set(environment.XRapidAPIHostHeaderName1, environment.XRapidAPIHostHeaderValue1)
         .set(environment.XRapidAPIKeyHeaderName1, environment.XRapidAPIKeyHeaderValue1); // Replace 'YOUR_WEATHER_API_KEY' with your actual API key
@@ -51,7 +51,7 @@ export class WeatherService {
         .set('units', 'metric')
         .set('mode', 'json');
 
-      return this.http.get<Future>(environment.weatherApiBaseUrl1, {
+      return this.http.get<Root>(environment.weatherApiBaseUrl1, {
         headers,
         params
       });

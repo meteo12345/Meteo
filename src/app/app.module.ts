@@ -19,13 +19,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
-import { NewshomeComponent } from './newshome/newshome.component';
+// import { NewshomeComponent } from './newshome/newshome.component';
 import { TodaysWeatherComponent } from './todays-weather/todays-weather.component';
-import { TravelBuddyComponent } from './travel-buddy/travel-buddy.component';
+// import { TravelBuddyComponent } from './travel-buddy/travel-buddy.component';
 import { ForecastFutureComponent } from './forecast-future/forecast-future.component';
 import { ServiceComponent } from './service/service.component';
 import { NavComponent } from './nav/nav.component';
 import { Nav1Component } from './nav1/nav1.component';
+import { FavoritesListComponent } from './favorites-list/favorites-list.component';
 
 
 
@@ -39,13 +40,14 @@ import { Nav1Component } from './nav1/nav1.component';
     
     LoginComponent,
     RegisterComponent,
-    NewshomeComponent,
+    // NewshomeComponent,
     TodaysWeatherComponent,
-    TravelBuddyComponent,
+    // TravelBuddyComponent,
     ForecastFutureComponent,
     ServiceComponent,
     NavComponent,
     Nav1Component,
+    FavoritesListComponent,
    
    
   ],

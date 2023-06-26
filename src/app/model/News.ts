@@ -1,6 +1,6 @@
-export type news = NewsData[]
-// adsmetric:Adsmetric
-export interface NewsData {
+export type Root = Root2[]
+
+export interface Root2 {
   id: string
   assetName: string
   type: string
@@ -10,7 +10,7 @@ export interface NewsData {
   teaserTitle: string
   mobileHeadline: string
   author: string[]
-  author_bio_link: string[]
+  author_bio_link: string | undefined[]
   pcollid: string
   url: string
   description: string
@@ -23,6 +23,7 @@ export interface NewsData {
   distro: boolean
   premium: boolean
   seometa: Seometa
+  interests: Interests
   tags: Tags
   variants: Variants
   body: string
@@ -37,7 +38,7 @@ export interface NewsData {
 export interface Adsmetrics {
   adconfigid: string
   adzone: string
-  pagecode: string
+  pagecode?: string
 }
 
 export interface Seometa {
@@ -47,6 +48,11 @@ export interface Seometa {
   "og:image": string
   "og:description": string
   canonical: any
+}
+
+export interface Interests {
+  category: string
+  backgroundColorName: string
 }
 
 export interface Tags {
@@ -113,18 +119,27 @@ export interface Wxnode {
   collection?: string
   collection_name?: string
   playlist_type?: string
-  twitter_widget?: TwitterWidget
-  caption?: string
-  links?: any[]
-  align: any
   sizecode?: string
-  credit?: string
-  linkurl?: string
-  synopsis?: string
+  align: any
   map?: Map
+  links?: any[]
   title?: string
   description?: string
   help_text?: string
+  twitter_widget?: TwitterWidget
+  caption?: string
+  credit?: string
+  linkurl?: string
+  synopsis?: string
+  refreshadbeacon?: number
+  refreshpvbeacon?: number
+  slideshow?: string
+  adposition?: string
+}
+
+export interface Map {
+  sizecode: string
+  imageurl: string
 }
 
 export interface TwitterWidget {
@@ -136,9 +151,4 @@ export interface TwitterWidget {
 export interface EmbedOptions {
   handle: string
   tweet_id?: string
-}
-
-export interface Map {
-  sizecode: string
-  imageurl: string
 }

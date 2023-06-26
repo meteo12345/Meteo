@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherData } from '../model/Weather.model';
 import { WeatherService } from '../services/weather.service';
+import { FavoritesService } from '../services/favorites.service';
 
 @Component({
   selector: 'app-todays-weather',
@@ -9,7 +10,7 @@ import { WeatherService } from '../services/weather.service';
 })
 export class TodaysWeatherComponent implements OnInit {
 
-  constructor(private weatherService: WeatherService) {
+  constructor(private weatherService: WeatherService,private favoritesService:FavoritesService) {
 
 
   }
@@ -37,4 +38,10 @@ export class TodaysWeatherComponent implements OnInit {
             }
           });
         }
+
+        addToFavorites(location: string): void {
+          this.favoritesService.addToFavorites(location);
+        }
+        
+        
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from '../services/weather.service';
-import { Future } from '../model/forecast.model';
+import { Root } from '../model/forecast.model';
 
 @Component({
   selector: 'app-forecast-future',
@@ -14,7 +14,7 @@ export class ForecastFutureComponent implements OnInit{
 
   }
   cityName:string='Trivandrum';
-  futureforecast?: Future;
+  futureforecast?: Root;
 
   ngOnInit(): void {
     this.getForecastData(this.cityName);

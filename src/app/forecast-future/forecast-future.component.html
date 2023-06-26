@@ -28,16 +28,17 @@
 <img src="../assets/forecast.jpg" >
 >
 <div class="weather-data">
-<div class="location">{{futureforecast.location.name}}</div>
-<div class="temperature">{{ futureforecast.current.temp_c| number: '1.0-0'}} °C</div>
+<div class="location">{{futureforecast.future.city_name}}</div>
+<!-- <div class="temperature">{{ futureforecast.current.temp_c| number: '1.0-0'}} °C</div>
 </div>
 
-</div>
+</div> -->
 <div class="lower-data">
 <div class="more-info-label">
-        More Information
+      futureforecast.future.timezone
+      futureforecast.weath.description
 </div>
-
+<!-- 
 <div class="more-info-container">
 <div class="info-block">
 <div class="info-block-label">
@@ -86,7 +87,7 @@
 
 
 
-</div>
+</div> -->
 
 </div>
 </div>

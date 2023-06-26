@@ -38,7 +38,7 @@
         <div class="location">{{weatherData.location.name}}</div>
         <div class="temperature">{{ weatherData.current.temp_c| number: '1.0-0'}} °C</div>
         </div>
-        
+       
         
         </div>
         <div class="lower-data">
@@ -119,6 +119,9 @@
         </div>
         
         </div>
+        <button (click)="addToFavorites(weatherData.location.name)">Add to Favorites</button>
+        <a routerLink="/favorites-list">View Favorites</a>
+
 
 </div>
 
